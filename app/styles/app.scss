@@ -1,4 +1,47 @@
+$m-gutter: 1rem;
 
 @import "ember-bootstrap/bootstrap";
 
 @import 'reset';
+@import "home";
+@import 'contact';
+@import 'companies';
+
+
+.section {
+  padding: $m-gutter * 2;
+}
+
+.container {
+  max-width: 90rem;
+}
+
+.negative-margin {
+  margin: 0 -1rem;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  border: 0;
+  background: none;
+
+  &:hover {
+    background: none;
+  }
+}
+
+.logo {
+  margin: $m-gutter;
+  margin-left: 0;
+  width: 10rem;
+}
+
+.nav-text {
+  margin: $m-gutter;
+  margin-right: 0;
+  font-size: 18px;
+}

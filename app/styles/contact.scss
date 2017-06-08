@@ -1,0 +1,26 @@
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.social {
+  font-size: 4rem;
+
+  &-icon {
+    padding: $m-gutter;
+  }
+
+  &-fb {
+    color: #3B5998;
+  }
+
+  &-tt {
+    color: #2FA8F3;
+  }
+
+  &-li {
+    color: #0076B4;
+  }
+}
