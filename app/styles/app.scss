@@ -20,6 +20,12 @@ $panel-default-heading-bg: rgba(#043175,.87);
 @import 'contact';
 @import 'companies';
 
+.app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 .section {
   padding: $m-gutter * 2;
 }
@@ -58,7 +64,12 @@ $panel-default-heading-bg: rgba(#043175,.87);
   font-size: 18px;
 }
 
+.content {
+  flex: 1;
+}
+
 .footer {
   color: #fff;
-  background-color: $footer-default-bg;
+  background: $footer-default-bg;
+  bottom: 0;
 }

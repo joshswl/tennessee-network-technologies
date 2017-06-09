@@ -1,21 +1,23 @@
-<nav class="navbar navbar-default negative-margin">
-  <div class="container">
-    <div class="navbar-header">
-      {{#link-to "home" class="navbar-brand nav-text"}}
-        Tennessee Network Technologies, Inc.
-      {{/link-to}}
+<div class="app">
+  <nav class="navbar navbar-default negative-margin">
+    <div class="container">
+      <div class="navbar-header">
+        {{#link-to "home" class="navbar-brand nav-text"}}
+          Tennessee Network Technologies, Inc.
+        {{/link-to}}
+      </div>
+      <div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-text">{{#link-to "companies"}}Affiliated Companies{{/link-to}}</li>
+          <li class="nav-text">{{#link-to "contact"}}Contact Us{{/link-to}}</li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="nav-text">{{#link-to "companies"}}Affiliated Companies{{/link-to}}</li>
-        <li class="nav-text">{{#link-to "contact"}}Contact Us{{/link-to}}</li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  </nav>
 
-{{outlet}}
+  {{outlet}}
 
-<footer class="footer section">
-  <div class="container flex-end">© 2017 Tennessee Network Technologies, Inc.</div>
-</footer>
+  <footer id="footer" class="footer section">
+    <div class="container flex-end">© 2017 Tennessee Network Technologies, Inc.</div>
+  </footer>
+</div>
