@@ -1,2 +1,75 @@
+$m-gutter: 1rem;
+
+$navbar-default-link-color: #fff;
+$navbar-default-link-hover-color: #ccc;
+
+$navbar-default-brand-color: #fff;
+
+$navbar-default-bg: rgba(#043175,.87);
+
+$footer-default-bg: rgba(#043175,.87);
+
+$panel-default-text: #fff;
+$panel-default-border: rgba(#043175,.87);
+$panel-default-heading-bg: rgba(#043175,.87);
 
 @import "ember-bootstrap/bootstrap";
+
+@import 'reset';
+@import "home";
+@import 'contact';
+@import 'companies';
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.section {
+  padding: $m-gutter * 2;
+}
+
+.container {
+  max-width: 90rem;
+}
+
+.negative-margin {
+  margin: 0 -1rem;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  border: 0;
+  background: none;
+
+  &:hover {
+    background: none;
+  }
+}
+
+.logo {
+  margin: $m-gutter;
+  margin-left: 0;
+  width: 10rem;
+}
+
+.nav-text {
+  margin: $m-gutter;
+  margin-right: 0;
+  font-size: 18px;
+}
+
+.content {
+  flex: 1;
+}
+
+.footer {
+  color: #fff;
+  background: $footer-default-bg;
+  bottom: 0;
+}
