@@ -15,6 +15,7 @@ $panel-default-heading-bg: rgba(#043175,.87);
 
 // @import "ember-bootstrap/bootstrap";
 
+$c-white: rgba(#fff, 0.8);
 $c-grey: #9f9f9f;
 $c-black: #000;
 
@@ -23,7 +24,7 @@ $c-black: #000;
 @import 'contact';
 @import 'companies';
 
-@import url('https://fonts.googleapis.com/css?family=Advent+Pro|Unica+One');
+@import url('https://fonts.googleapis.com/css?family=Rajdhani|Unica+One');
 
 .app {
   display: flex;
@@ -37,7 +38,8 @@ $c-black: #000;
 }
 
 .container {
-  max-width: 90rem;
+  max-width: 70rem;
+  margin: 0 auto;
 }
 
 .negative-margin {
@@ -58,13 +60,17 @@ $c-black: #000;
   }
 }
 
+.below-nav {
+  padding-top: 5rem;
+}
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: $m-gutter;
   width: 90%;
-  font-family: 'Unica One', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
 
   position: absolute;
   top: 0;
@@ -72,9 +78,7 @@ $c-black: #000;
   transform: translateX(-50%);
 
   &__logo {
-    // margin: $m-gutter;
     margin-left: 0rem;
-    // width: auto;
   }
 
   &__links {
@@ -86,11 +90,10 @@ $c-black: #000;
   margin: $m-gutter;
   font-size: 18px;
   color: $c-grey;
-  text-transform: uppercase;
-  font-size: 23px;
+  font-size: 20px;
 
   &:hover {
-    color: $c-black;
+    color: $c-white;
     transition: 0.5s;
   }
 }

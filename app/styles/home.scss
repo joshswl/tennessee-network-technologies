@@ -1,9 +1,25 @@
-.custom-banner {
+.banner {
   width: 100%;
   height: 40rem;
   background: url('../img/code-bg-alt.jpg') no-repeat fixed;
   background-size: cover;
-  margin: 0;
+  margin: -5rem 0 0 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__content {
+    padding: 1rem;
+    width: 70%;
+  }
+
+  &__text {
+    font-size: 65px;
+    color: $c-white;
+    margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+  }
 }
 
 .company {
