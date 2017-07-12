@@ -23,11 +23,20 @@
 }
 
 .company {
-  display: flex;
-  align-items: center;
+  font-family: 'Rajdhani', sans-serif;
   text-align: center;
+  padding: 1rem;
 
   &-overview {
+    max-width: 65rem;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
     font-size: 18.5px;
   }
+}
+
+.title-text {
+  margin-top: 0;
+  font-size: 40px;
+  border-bottom: $s-border;
 }

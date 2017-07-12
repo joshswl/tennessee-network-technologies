@@ -17,14 +17,17 @@ $panel-default-heading-bg: rgba(#043175,.87);
 
 $c-white: rgba(#fff, 0.8);
 $c-grey: #9f9f9f;
+$c-dark-grey: #272729;
 $c-black: #000;
+
+$s-border: #d6d6d6 solid 0.1rem;
 
 @import 'reset';
 @import "home";
 @import 'contact';
 @import 'companies';
 
-@import url('https://fonts.googleapis.com/css?family=Rajdhani|Unica+One');
+@import url('https://fonts.googleapis.com/css?family=Rajdhani|Roboto');
 
 .app {
   display: flex;
@@ -103,7 +106,8 @@ $c-black: #000;
 }
 
 .footer {
-  color: #fff;
-  background: $footer-default-bg;
+  font-family: 'Rajdhani', sans-serif;
+  color: $c-grey;
+  background: $c-dark-grey;
   bottom: 0;
 }
