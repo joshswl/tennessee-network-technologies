@@ -36,7 +36,27 @@
 }
 
 .title-text {
+  font-family: 'Roboto', sans-serif;
   margin-top: 0;
   font-size: 40px;
   border-bottom: $s-border;
+}
+
+.subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+
+  }
+}
+
+.half-width {
+  width: calc(100% / 2 - 2rem);
 }
