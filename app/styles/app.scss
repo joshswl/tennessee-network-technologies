@@ -13,21 +13,27 @@ $panel-default-text: #fff;
 $panel-default-border: rgba(#043175,.87);
 $panel-default-heading-bg: rgba(#043175,.87);
 
-@import "ember-bootstrap/bootstrap";
+// @import "ember-bootstrap/bootstrap";
+
+$c-grey: #9f9f9f;
+$c-black: #000;
 
 @import 'reset';
 @import "home";
 @import 'contact';
 @import 'companies';
 
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro|Unica+One');
+
 .app {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  position: relative;
 }
 
 .section {
-  padding: $m-gutter * 2;
+  padding: $m-gutter;
 }
 
 .container {
@@ -52,16 +58,41 @@ $panel-default-heading-bg: rgba(#043175,.87);
   }
 }
 
-.logo {
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin: $m-gutter;
-  margin-left: 0;
-  width: auto;
+  width: 90%;
+  font-family: 'Unica One', sans-serif;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &__logo {
+    // margin: $m-gutter;
+    margin-left: 0rem;
+    // width: auto;
+  }
+
+  &__links {
+    display: flex;
+  }
 }
 
-.nav-text {
+.nav-link {
   margin: $m-gutter;
-  margin-right: 0;
   font-size: 18px;
+  color: $c-grey;
+  text-transform: uppercase;
+  font-size: 23px;
+
+  &:hover {
+    color: $c-black;
+    transition: 0.5s;
+  }
 }
 
 .content {

@@ -1,17 +1,15 @@
 <div class="app">
-  <nav class="navbar navbar-default negative-margin">
-    <div class="container">
-      <div class="navbar-header">
-        {{#link-to "home" class=""}}
-          <img src="http://placecage.com/300/50" alt="" class="logo">
-        {{/link-to}}
-      </div>
-      <div>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="nav-text">{{#link-to "companies"}}Affiliated Companies{{/link-to}}</li>
-          <li class="nav-text">{{#link-to "contact"}}Contact Us{{/link-to}}</li>
-        </ul>
-      </div>
+  <nav class="navbar">
+    <div class="navbar__logo">
+      {{#link-to "home" class=""}}
+        <img src="http://placecage.com/300/50" alt="" class="logo">
+      {{/link-to}}
+    </div>
+    <div>
+      <ul class="navbar__links">
+        {{#link-to "companies" class="nav-link"}}Affiliated Companies{{/link-to}}
+        {{#link-to "contact" class="nav-link"}}Contact Us{{/link-to}}
+      </ul>
     </div>
   </nav>
 
