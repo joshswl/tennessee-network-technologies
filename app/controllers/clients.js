@@ -31,8 +31,8 @@ export default Ember.Controller.extend({
     {src: '/img/logos/food-service/burgerking.png'},
   ],
   healthCare: [
-    {src: '/img/logos/health/hospitals.png'},
-    {src: '/img/logos/health/dialysis.png'},
-    {src: '/img/logos/health/long-term.png'},
+    {text: 'Hospitals'},
+    {text: 'Dialysis Centers'},
+    {text: 'Long-Term Care Facilities'},
   ],
 });
