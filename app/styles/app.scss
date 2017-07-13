@@ -13,25 +13,33 @@ $panel-default-text: #fff;
 $panel-default-border: rgba(#043175,.87);
 $panel-default-heading-bg: rgba(#043175,.87);
 
-@import "ember-bootstrap/bootstrap";
+// @import "ember-bootstrap/bootstrap";
+
+$c-white: rgba(#fff, 0.8);
+$c-grey: #9f9f9f;
+$c-dark-grey: #272729;
+$c-black: #000;
+
+$s-border: #d6d6d6 solid 0.1rem;
 
 @import 'reset';
 @import "home";
 @import 'contact';
 @import 'companies';
 
+@import url('https://fonts.googleapis.com/css?family=Rajdhani|Roboto');
+
 .app {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+  position: relative;
 }
 
 .section {
-  padding: $m-gutter * 2;
+  padding: $m-gutter;
 }
 
 .container {
-  max-width: 90rem;
+  max-width: 70rem;
+  margin: 0 auto;
 }
 
 .negative-margin {
@@ -52,16 +60,48 @@ $panel-default-heading-bg: rgba(#043175,.87);
   }
 }
 
-.logo {
-  margin: $m-gutter;
-  margin-left: 0;
-  width: auto;
+.below-nav {
+  padding-top: 5rem;
 }
 
-.nav-text {
+.navbar {
+  background: $c-dark-grey;
+  width: 100%;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Rajdhani', sans-serif;
+    max-width: 65rem;
+    margin: 0 auto;
+  }
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &__logo {
+    margin-left: -1rem;
+  }
+
+  &__links {
+    display: flex;
+    margin-right: -1rem;
+  }
+}
+
+.nav-link {
   margin: $m-gutter;
-  margin-right: 0;
   font-size: 18px;
+  color: $c-grey;
+  font-size: 20px;
+
+  &:hover {
+    color: $c-white;
+    transition: 0.5s;
+  }
 }
 
 .content {
@@ -69,7 +109,8 @@ $panel-default-heading-bg: rgba(#043175,.87);
 }
 
 .footer {
-  color: #fff;
-  background: $footer-default-bg;
+  font-family: 'Rajdhani', sans-serif;
+  color: $c-grey;
+  background: $c-dark-grey;
   bottom: 0;
 }
