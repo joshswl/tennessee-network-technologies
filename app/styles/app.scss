@@ -30,9 +30,6 @@ $s-border: #d6d6d6 solid 0.1rem;
 @import url('https://fonts.googleapis.com/css?family=Rajdhani|Roboto');
 
 .app {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
   position: relative;
 }
 
@@ -68,12 +65,17 @@ $s-border: #d6d6d6 solid 0.1rem;
 }
 
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: $m-gutter;
-  width: 90%;
-  font-family: 'Rajdhani', sans-serif;
+  background: $c-dark-grey;
+  width: 100%;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Rajdhani', sans-serif;
+    max-width: 65rem;
+    margin: 0 auto;
+  }
 
   position: absolute;
   top: 0;
@@ -81,11 +83,12 @@ $s-border: #d6d6d6 solid 0.1rem;
   transform: translateX(-50%);
 
   &__logo {
-    margin-left: 0rem;
+    margin-left: -1rem;
   }
 
   &__links {
     display: flex;
+    margin-right: -1rem;
   }
 }
 
