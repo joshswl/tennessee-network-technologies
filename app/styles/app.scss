@@ -20,12 +20,16 @@ $c-grey: #9f9f9f;
 $c-dark-grey: #272729;
 $c-black: #000;
 
+$t-roboto: 'Roboto', sans-serif;
+$t-raj: 'Rajdhani', sans-serif;
+
 $s-border: #d6d6d6 solid 0.1rem;
 
 @import 'reset';
 @import "home";
 @import 'contact';
 @import 'companies';
+@import 'clients';
 
 @import url('https://fonts.googleapis.com/css?family=Rajdhani|Roboto');
 
@@ -72,7 +76,7 @@ $s-border: #d6d6d6 solid 0.1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: $t-raj;
     max-width: 65rem;
     margin: 0 auto;
   }
@@ -109,7 +113,7 @@ $s-border: #d6d6d6 solid 0.1rem;
 }
 
 .footer {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: $t-raj;
   color: $c-grey;
   background: $c-dark-grey;
   bottom: 0;
