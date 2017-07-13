@@ -18,31 +18,36 @@
     font-size: 65px;
     color: $c-white;
     margin: 0;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: $t-raj;
   }
 }
 
 .company {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: $t-raj;
   text-align: center;
   padding: 1rem;
 
   &-overview {
     max-width: 65rem;
     margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
+    font-family: $t-roboto;
     font-size: 18.5px;
   }
 }
 
-.title-text {
-  margin-top: 0;
-  font-size: 40px;
+.title {
+  margin: 0;
   border-bottom: $s-border;
+
+  &-text {
+    text-align: center;
+    font-family: $t-raj;
+    font-size: 40px;
+  }
 }
 
 .subtitle {
-  font-family: 'Roboto', sans-serif;
+  font-family: $t-roboto;
   font-size: 20px;
   margin-bottom: 0;
 }
@@ -50,9 +55,9 @@
 .grid {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 
   &__item {
-
   }
 }
 
