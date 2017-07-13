@@ -25,9 +25,9 @@ export default Ember.Controller.extend({
     {src: '/img/logos/hospitality/hertz.png'},
   ],
   foodService: [
-    {src: '/img/logos/food-service/olive-garden.png'},
+    {src: '/img/logos/food-service/olive-garden.jpg'},
     {src: '/img/logos/food-service/mcdonalds.png'},
-    {src: '/img/logos/food-service/arbys.png'},
+    {src: '/img/logos/food-service/arbys.jpg'},
     {src: '/img/logos/food-service/burgerking.png'},
   ],
   healthCare: [
