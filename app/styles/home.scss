@@ -53,6 +53,10 @@
   margin-bottom: 0;
 }
 
+.body-text {
+  text-align: center;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -60,17 +64,8 @@
 
   &__item {
   }
-}
 
-.half-width {
-  width: calc(100% / 2 - 2rem);
-}
-
-.one-third-width {
-  width: calc(100% / 3);
-  text-align: center;
-}
-
-.one-quarter-width {
-  width: calc(100% / 4);
+  &__image {
+    margin: 2rem;
+  }
 }
