@@ -23,6 +23,7 @@
 
   &__links {
     display: flex;
+    margin: 0;
   }
 }
 
@@ -30,11 +31,23 @@
   margin: $m-gutter;
   font-size: 18px;
   color: $c-grey;
-  font-size: 20px;
+  font-size: 1.2rem;
   text-align: center;
 
   &:hover {
     color: $c-white;
     transition: 0.5s;
+  }
+}
+
+@media (min-width:320px) and (max-width: 650px) {
+  .navbar {
+    // &__links {
+    //   font-size: 1rem;
+    // }
+
+      &__content {
+      flex-direction: column;
+    }
   }
 }
