@@ -34,24 +34,6 @@ $s-border: #d6d6d6 solid 0.1rem;
   margin: 0 auto;
 }
 
-.negative-margin {
-  margin: 0 -1rem;
-}
-
-.flex-end {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.btn {
-  border: 0;
-  background: none;
-
-  &:hover {
-    background: none;
-  }
-}
-
 .logo {
   width: 8rem;
 }
@@ -79,12 +61,11 @@ $s-border: #d6d6d6 solid 0.1rem;
   transform: translateX(-50%);
 
   &__logo {
-    margin-left: -1rem;
+    padding: 0.5rem;
   }
 
   &__links {
     display: flex;
-    margin-right: -1rem;
   }
 }
 
@@ -93,6 +74,7 @@ $s-border: #d6d6d6 solid 0.1rem;
   font-size: 18px;
   color: $c-grey;
   font-size: 20px;
+  text-align: center;
 
   &:hover {
     color: $c-white;
