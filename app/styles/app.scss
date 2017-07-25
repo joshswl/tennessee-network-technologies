@@ -1,18 +1,5 @@
 $m-gutter: 1rem;
 
-$navbar-default-link-color: #fff;
-$navbar-default-link-hover-color: #ccc;
-
-$navbar-default-brand-color: #fff;
-
-$navbar-default-bg: rgba(#043175,.87);
-
-$footer-default-bg: rgba(#043175,.87);
-
-$panel-default-text: #fff;
-$panel-default-border: rgba(#043175,.87);
-$panel-default-heading-bg: rgba(#043175,.87);
-
 // @import "ember-bootstrap/bootstrap";
 
 $c-white: rgba(#fff, 0.8);
@@ -23,10 +10,11 @@ $c-black: #000;
 $t-roboto: 'Roboto', sans-serif;
 $t-raj: 'Rajdhani', sans-serif;
 
-$s-border: #d6d6d6 solid 0.1rem;
+$s-border: #d6d6d6 solid 0.08rem;
 
 @import 'reset';
-@import "home";
+@import 'home';
+@import 'navbar';
 @import 'contact';
 @import 'companies';
 @import 'clients';
@@ -35,7 +23,7 @@ $s-border: #d6d6d6 solid 0.1rem;
 @import url('https://fonts.googleapis.com/css?family=Rajdhani|Roboto');
 
 .app {
-  position: relative;
+
 }
 
 .section {
@@ -47,74 +35,8 @@ $s-border: #d6d6d6 solid 0.1rem;
   margin: 0 auto;
 }
 
-.negative-margin {
-  margin: 0 -1rem;
-}
-
-.flex-end {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.btn {
-  border: 0;
-  background: none;
-
-  &:hover {
-    background: none;
-  }
-}
-
-.logo {
-  width: 8rem;
-}
-
 .below-nav {
-  padding-top: 5rem;
-}
-
-.navbar {
-  background: $c-dark-grey;
-  width: 100%;
-
-  &__content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: $t-raj;
-    max-width: 65rem;
-    margin: 0 auto;
-  }
-
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-
-  &__logo {
-    margin-left: -1rem;
-  }
-
-  &__links {
-    display: flex;
-    margin-right: -1rem;
-  }
-}
-
-.nav-link {
-  margin: $m-gutter;
-  font-size: 18px;
-  color: $c-grey;
-  font-size: 20px;
-
-  &:hover {
-    color: $c-white;
-    transition: 0.5s;
-  }
-}
-
-.content {
-  flex: 1;
+  padding-top: 4rem;
 }
 
 .footer {
