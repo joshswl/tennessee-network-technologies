@@ -10,7 +10,7 @@ $c-black: #000;
 $t-roboto: 'Roboto', sans-serif;
 $t-raj: 'Rajdhani', sans-serif;
 
-$s-border: #d6d6d6 solid 0.1rem;
+$s-border: #d6d6d6 solid 0.08rem;
 
 @import 'reset';
 @import "home";
@@ -77,10 +77,6 @@ $s-border: #d6d6d6 solid 0.1rem;
     color: $c-white;
     transition: 0.5s;
   }
-}
-
-.content {
-  flex: 1;
 }
 
 .footer {
