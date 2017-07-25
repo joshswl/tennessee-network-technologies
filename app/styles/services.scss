@@ -5,3 +5,25 @@
 .no-margin {
   margin: 0;
 }
+
+.info {
+  width: 65%;
+}
+
+.image {
+  width: 35%;
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+  .image {
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .info {
+    text-align: center;
+  }
+}
