@@ -6,10 +6,17 @@ body {
 ul {
   padding-left: 0;
   list-style: none;
+  column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
 }
 
-li {
-  margin: 1rem 0;
+ul > li {
+    line-height: 35px;
+}
+ul > li > div {
+    height: 35px;
+    line-height: 1.2;
 }
 
 img {

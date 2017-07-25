@@ -45,3 +45,9 @@ $s-border: #d6d6d6 solid 0.08rem;
   background: $c-dark-grey;
   bottom: 0;
 }
+
+@media (min-width: 320px) and (max-width: 650px) {
+  .below-nav {
+    padding-top: 10rem;
+  }
+}
