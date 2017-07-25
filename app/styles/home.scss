@@ -22,16 +22,13 @@
   }
 }
 
-.company {
-  font-family: $t-raj;
+.about {
   text-align: center;
   padding: 1rem;
 
-  &-overview {
+  &__text {
     max-width: 65rem;
     margin: 0 auto;
-    font-family: $t-roboto;
-    font-size: 18.5px;
   }
 }
 
