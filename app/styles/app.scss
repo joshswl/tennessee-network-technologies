@@ -36,7 +36,7 @@ $s-border: #d6d6d6 solid 0.08rem;
 }
 
 .below-nav {
-  padding-top: 4rem;
+  padding-top: 4.5rem;
 }
 
 .footer {
@@ -44,4 +44,10 @@ $s-border: #d6d6d6 solid 0.08rem;
   color: $c-grey;
   background: $c-dark-grey;
   bottom: 0;
+}
+
+@media (min-width: 320px) and (max-width: 650px) {
+  .below-nav {
+    padding-top: 10rem;
+  }
 }
