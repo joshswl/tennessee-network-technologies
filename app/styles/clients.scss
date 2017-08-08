@@ -1,14 +1,17 @@
 .one-half-width {
-  width: calc(100% / 2);
+  width: calc(100% / 2 - 2rem);
+  margin: 1rem;
 }
 
 .one-third-width {
-  width: calc(100% / 3);
+  width: calc(100% / 3 - 2rem);
   text-align: center;
+  margin: 1rem;
 }
 
 .one-quarter-width {
-  width: calc(100% / 4);
+  width: calc(100% / 4 - 2rem);
+  margin: 1rem;
 }
 
 .logo  {
@@ -16,5 +19,19 @@
   &-width {
     width: calc(100% / 5 - 2rem);
     margin: 1rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .logo-width {
+    width: calc(100% / 2 - 2rem);
+  }
+
+  .one-half-width {
+    width: 100%;
+  }
+
+  .one-quarter-width {
+    width: calc(100% / 2 - 2rem);
   }
 }
