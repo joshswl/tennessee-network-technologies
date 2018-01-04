@@ -2,10 +2,10 @@ $m-gutter: 1rem;
 
 // @import "ember-bootstrap/bootstrap";
 
-$c-white: rgba(#fff, 0.8);
+$c-white: #f4faf4;
 $c-grey: #9f9f9f;
 $c-dark-grey: #272729;
-$c-black: #000;
+$c-black: #272729;
 
 $t-roboto: 'Roboto', sans-serif;
 $t-raj: 'Rajdhani', sans-serif;
@@ -22,6 +22,10 @@ $s-border: #d6d6d6 solid 0.08rem;
 
 @import url('https://fonts.googleapis.com/css?family=Rajdhani|Roboto');
 
+body {
+  background: $c-white;
+}
+
 .app {
 
 }
@@ -31,7 +35,7 @@ $s-border: #d6d6d6 solid 0.08rem;
 }
 
 .container {
-  max-width: 70rem;
+  max-width: 65rem;
   margin: 0 auto;
 }
 
@@ -40,7 +44,7 @@ $s-border: #d6d6d6 solid 0.08rem;
 }
 
 .footer {
-  font-family: $t-raj;
+  font-family: $t-roboto;
   color: $c-grey;
   background: $c-dark-grey;
   bottom: 0;
