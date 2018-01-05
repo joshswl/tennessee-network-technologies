@@ -1,7 +1,35 @@
-.card {
+.no-margin {
+  margin: 0;
+}
+
+.info {
+  width: calc(60% - 2rem);
   padding: 1rem;
 }
 
-.no-margin {
-  margin: 0;
+.image {
+  width: calc(40% - 2rem);
+  padding: 1rem;
+}
+
+.img {
+  width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+  .flex {
+    display: block;
+  }
+
+  .image {
+    width: calc(70% - 2rem);
+    margin: auto;
+  }
+
+  .info {
+    width: calc(100% - 2rem);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
